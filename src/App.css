@@ -106,7 +106,7 @@ h3 {
   margin-top: 25px;
   margin-bottom: 18px;
   font-size: 0.95em;
-  color: #3b82f6;
+  color: #000000;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -116,6 +116,26 @@ h3 {
 
 h3:first-child {
   margin-top: 0;
+}
+
+.section-title {
+  margin-bottom: 8px;
+  font-size: 1.05em;
+  color: #1f2937;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  border: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.section-description {
+  font-size: 0.85em;
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.4;
 }
 
 .grid-row {

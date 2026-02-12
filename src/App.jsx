@@ -129,7 +129,9 @@ function App() {
       <h1>Student Enrollment System</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <fieldset>
-          <legend><h2>Personal Information</h2></legend>
+          <legend><h2>👤 Personal Information</h2></legend>
+          <h3 className="section-title">Basic Personal Details</h3>
+          <p className="section-description">Please provide your basic personal details</p>
           <div className="grid-row">
             <div className="grid-item">
               <label htmlFor="firstName">First Name</label>
@@ -221,7 +223,9 @@ function App() {
         </fieldset>
 
         <fieldset>
-          <legend><h2>Contact Details</h2></legend>
+          <legend><h2>📞 Contact Details</h2></legend>
+          <h3 className="section-title">Communication & Address Information</h3>
+          <p className="section-description">Enter your email, phone numbers, and residential address</p>
           <div className="grid-row">
             <div className="grid-item">
               <label htmlFor="email">Email Address</label>
@@ -262,6 +266,7 @@ function App() {
                     {...field} 
                     type="tel" 
                     id="landline"
+                    maxLength="15"
                     inputMode="numeric"
                     onKeyPress={(e) => {
                       if (!/[0-9]/.test(e.key)) e.preventDefault();
@@ -332,7 +337,9 @@ function App() {
         </fieldset>
 
         <fieldset>
-          <legend><h2>Educational Background</h2></legend>
+          <legend><h2>🎓 Educational Background</h2></legend>
+          <h3 className="section-title">Academic History</h3>
+          <p className="section-description">Provide details about your previous educational institutions</p>
           <h3>Grade School</h3>
           <div className="grid-row">
             <div className="grid-item">
@@ -435,7 +442,9 @@ function App() {
         </fieldset>
 
         <fieldset>
-          <legend><h2>Program Selection</h2></legend>
+          <legend><h2>🎯 Program Selection</h2></legend>
+          <h3 className="section-title">Academic Program Preferences</h3>
+          <p className="section-description">Choose your academic level, department, and degree program</p>
           <div className="grid-row">
             <div className="grid-item">
               <label>Academic Level</label>
@@ -468,7 +477,7 @@ function App() {
         </fieldset>
 
         <fieldset>
-          <legend><h2>College Department</h2></legend>
+          <legend><h2>🌬️ College Department</h2></legend>          <h3 className="section-title">Department Selection</h3>          <p className="section-description">Select your preferred college or department</p>
           <div className="grid-row">
             <div className="grid-item">
               <label>College Department</label>
@@ -490,7 +499,7 @@ function App() {
         </fieldset>
 
         <fieldset>
-          <legend><h2>Degree Program</h2></legend>
+          <legend><h2>🌟 Degree Program</h2></legend>          <h3 className="section-title">Program Specialization</h3>          <p className="section-description">Choose your specific degree program based on your department selection</p>
           <div className="grid-row">
             <div className="grid-item">
               <label>Degree Program</label>
@@ -508,7 +517,7 @@ function App() {
                   )}
                 />
               ) : (
-                <p style={{ color: '#667eea', fontStyle: 'italic', padding: '14px', background: '#f1f3f7', borderRadius: '8px', fontWeight: '500', textAlign: 'center' }}>
+                <p style={{ color: '#000000', fontStyle: 'italic', padding: '14px', background: '#f1f3f7', borderRadius: '8px', fontWeight: '500', textAlign: 'center' }}>
                   Please select a College Department first
                 </p>
               )}
@@ -518,7 +527,9 @@ function App() {
         </fieldset>
 
         <fieldset>
-          <legend><h2>Enrollment Information</h2></legend>
+          <legend><h2>📋 Enrollment Information</h2></legend>
+          <h3 className="section-title">Enrollment Scheduling</h3>
+          <p className="section-description">Select your preferred semester and campus location</p>
           <div className="grid-row">
             <div className="grid-item">
               <label>Semester</label>
